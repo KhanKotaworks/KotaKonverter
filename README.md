@@ -38,15 +38,13 @@ The **KotaKonverter** is a web application that allows users to convert between 
    Conversion results in various units will be displayed in a table format in real-time.
 
 ## License
-Have a look at the licence information below.
+Have a look at "License Information" below.
 
 ---
 
 # License Information
 
 ### Software License
-The source code of this project is licensed under the [MIT License](LICENSE).  
-You are free to use, modify, and distribute the code under the terms of the license.
 
 ### Website Content License
 The content of the website is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).  
