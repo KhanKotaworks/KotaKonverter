@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>untitled</title>
+    <meta name="description" content="null">
+    <meta name="author" content="null">
+    <meta name="keywords" content="null">
+    <meta property="og:title" content="null">
+    <meta property="og:description" content="null">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="converter.js"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+<main>
+    <header>
+        <h1>コタ変換ツール</h1>
+    </header>
+
+
+
+    <section class="section-ui">
+        <label for="viewport-width" id="section-ui-label">参照するビューポート幅 (px)</label>
+        <input type="number" id="viewport-width" value="1200">
+        <label id="section-ui-label-px">(px)</label>
+    </section>
+
+    <section class="section-option">
+        <input type="number" id="value-input" value="16">
+        <select id="unit-select">
+            <option value="px">px</option>
+            <option value="pt">pt</option>
+            <option value="rem">rem</option>
+            <option value="em">em</option>
+            <option value="%">%</option>
+            <option value="vw">vw</option>
+            <option value="vh">vh</option>
+            <option value="vmin">vmin</option>
+            <option value="vmax">vmax</option>
+        </select>
+    </section>
+
+    <table>
+        <thead>
+            <tr>
+                <th>単位</th>
+                <th>変換値</th>
+            </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+    </table>
+
+    <section class="section-info">
+        <ul>
+            <li>※ 基準値: 1rem = 16px</li>
+            <li>※ ビューポート関連の単位（vw, vh, vmin, vmax）は設定された幅を基準に計算</li>
+            <li>※ vhはvwと同じ値として計算</li>
+            <li>※ vminとvmaxはビューポート幅を基準に計算</li>
+            <li>※ emはroot要素のフォントサイズ（16px）を基準として計算</li>
+        </ul>
+    </section>
+    
+</main>
+</body>
+
+</html>

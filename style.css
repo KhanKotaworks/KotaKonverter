@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =====================================================================
+This document was written by Kotaro Kanno 1MA04 as a web coding assignment
+for the Multimedia Department of Hokkaido College of Art and Design.
+===================================================================== */
+
+/* =============================================
+RESET
+============================================= */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	line-height: 100%;
+	font-weight: var(--Regular);
+	background: transparent;
+	outline: none;
+	list-style: none;
+	font: inherit;
+}
+
+button,
+input[type="submit"] {
+	appearance: none;
+	padding: 0;
+	font-size: 100%;
+	line-height: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+/* =============================================
+COMMON
+============================================= */
+
+html {
+	scrollbar-width: none;
+	font-size: 16px;
+}
+
+body {
+	font-family: "IBM Plex Sans JP", sans-serif;
+	font-size: 1rem;
+	padding: 0;
+	background-color: var(--bg01);
+	color: var(--tx01);
+}
+
+:root {
+	/* =====================
+	Color
+	===================== */
+	/* Background Colors */
+	--bg01: #ffffff;
+	--bg02: #f4f4f4;
+	--bg03: #e7e7e7;
+
+	/* Text Colors */
+	--tx01: #181818;
+	--tx02: #555555;
+	--tx03: #999999;
+
+	/* Gray Colors */
+	--gray01: #cccccc;
+	--gray02: #aaaaaa;
+	--gray03: #888888;
+
+	/* Accent Colors */
+	--accent01: #ff5f5f;
+	--accent02: #4caf50;
+	--accent03: #007bff;
+
+	/* White Tones */
+	--wh01: #ffffff;
+	--wh02: #f9f9f9;
+	--wh03: #f4f4f4;
+	--wh04: #dddddd;
+
+	/* Others */
+	--border: #dddddd;
+	--shadow: rgba(0, 0, 0, 0.1);
+	/* =====================
+	Font Weight
+	===================== */
+	--Bold: 700;
+	--SemiBold: 600;
+	--Medium: 500;
+	--Regular: 400;
+	--Light: 300;
+	--ExtraLight: 200;
+	--Thin: 100;
+}
+
+::selection {
+	background: rgba(255, 95, 95, 0.5);
+	color: var(--accent03);
+}
+
+main {
+	width: calc(100vw - 400px);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 calc((50vw - 1200px) / 2);
+}
+
+@media (max-width: 768px) {
+	main {
+		width: calc(100vw - 50px);
+		padding: 0 25px;
+	}
+}
+
+@media (max-width: 390px) {
+	main {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+header {
+	margin-bottom: 1.25rem;
+	margin: 3rem 0;
+}
+
+h1 {
+	color: var(--tx01);
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: var(--Bold);
+	text-decoration-color: var(--gray03);
+	text-decoration: underline;
+	text-decoration-thickness: 1.6em;
+	text-decoration-color: var(--bg03);
+	text-underline-offset: -1.2em;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+	letter-spacing: 0.05em;
+	font-feature-settings: "palt" 1;
+}
+
+.section-ui {
+	margin-bottom: 0.75rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1.25rem;
+	background-color: var(--bg01);
+}
+
+th,
+td {
+	border: 1px solid var(--border);
+	padding: 0.625rem;
+	text-align: center;
+	color: var(--tx02);
+}
+
+th {
+	background-color: var(--wh02);
+	color: var(--tx01);
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.section-info {
+	margin-top: 1.875rem;
+	padding: 0.9375rem;
+	background-color: var(--bg02);
+	border: 1px solid var(--border);
+	border-radius: 0.3125rem;
+	color: var(--tx02);
+}
+
+/* =============================================
+STYLE
+============================================= */
