@@ -2,8 +2,7 @@
 /* CSS Document */
 
 /* =====================================================================
-This document was written by Kotaro Kanno 1MA04 as a web coding assignment
-for the Multimedia Department of Hokkaido College of Art and Design.
+
 ===================================================================== */
 
 /* =============================================
@@ -165,7 +164,7 @@ textarea {
 }
 
 /* =============================================
-COMMON
+STYLE
 ============================================= */
 
 html {
@@ -254,7 +253,7 @@ main {
 
 header {
 	margin-bottom: 1.25rem;
-	margin: 3rem 0;
+	margin: 1.4rem 0;
 }
 
 h1 {
@@ -290,6 +289,7 @@ td {
 	padding: 0.625rem;
 	text-align: center;
 	color: var(--tx02);
+	font-feature-settings: "palt" 1;
 }
 
 th {
@@ -297,6 +297,7 @@ th {
 	color: var(--tx01);
 	font-weight: bold;
 	font-size: 2rem;
+	font-feature-settings: "palt" 1;
 }
 
 .section-info {
@@ -304,10 +305,12 @@ th {
 	padding: 0.9375rem;
 	background-color: var(--bg02);
 	border: 1px solid var(--border);
-	border-radius: 0.3125rem;
+	border-radius: 0.7rem;
 	color: var(--tx02);
+	margin-bottom: 2rem;
 }
 
-/* =============================================
-STYLE
-============================================= */
+footer {
+	font-size: 0.7rem;
+	text-align: center;
+}
