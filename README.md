@@ -17,7 +17,7 @@
    各単位への変換結果が表形式でリアルタイムに表示されます。
 
 ## ライセンス
-詳細は[LICENSE](LICENSE)をご確認ください。
+詳細は下記「License Information」をご確認ください。
 
 ---
 
@@ -38,11 +38,11 @@ The **KotaKonverter** is a web application that allows users to convert between 
    Conversion results in various units will be displayed in a table format in real-time.
 
 ## License
-This software is licensed under the (LICENSE).
+Have a look at the licence information below.
 
 ---
 
-## License Information
+# License Information
 
 ### Software License
 The source code of this project is licensed under the [MIT License](LICENSE).  
